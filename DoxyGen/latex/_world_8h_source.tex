@@ -1,0 +1,43 @@
+\hypertarget{_world_8h_source}{}\doxysection{World.\+h}
+\label{_world_8h_source}\index{C:/Users/User/Desktop/GAME3015\_A1\_YeongjinLim/GAME3015\_A1\_YeongjinLim/GAME3015\_A1\_YeongjinLim/World.h@{C:/Users/User/Desktop/GAME3015\_A1\_YeongjinLim/GAME3015\_A1\_YeongjinLim/GAME3015\_A1\_YeongjinLim/World.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Player.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Enemy.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}SceneNode.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Common/Camera.h"{}}}
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_world}{World}}}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     std::vector<Entity*> AllEntities;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     std::map<std::string, std::unique\_ptr<MeshGeometry>> mGeometries;}
+\DoxyCodeLine{30     std::map<std::string, std::unique\_ptr<Material>> mMaterials;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{comment}{// List of all the render items.}}
+\DoxyCodeLine{33     std::vector<std::unique\_ptr<RenderItem>> mAllRitems;}
+\DoxyCodeLine{34     \textcolor{comment}{// Render items divided by PSO.}}
+\DoxyCodeLine{35     std::vector<RenderItem*> mRitemLayer[(int)RenderLayer::Count];}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \mbox{\hyperlink{class_player}{Player}}* jet = \textcolor{keyword}{new} \mbox{\hyperlink{class_player}{Player}}();}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_enemy}{Enemy}}* enemy = \textcolor{keyword}{new} \mbox{\hyperlink{class_enemy}{Enemy}}();}
+\DoxyCodeLine{39     \mbox{\hyperlink{class_enemy}{Enemy}}* enemy2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_enemy}{Enemy}}();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_world_a3950826d9f256fa8516c3419d50553fd}{buildWorld}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} Update(\textcolor{keyword}{const} GameTimer\& gt);}
+\DoxyCodeLine{45     Camera* GetCamera() \{ \textcolor{keywordflow}{return} \&\_Camera; \}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{keyword}{private}:}
+\DoxyCodeLine{48     Camera \_Camera;}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \};}
+\DoxyCodeLine{52 }
+
+\end{DoxyCode}

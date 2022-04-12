@@ -1,0 +1,99 @@
+\hypertarget{class_world}{}\doxysection{World Class Reference}
+\label{class_world}\index{World@{World}}
+
+
+class for \mbox{\hyperlink{class_world}{World}} itself.  
+
+
+
+
+{\ttfamily \#include $<$World.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_world_a3950826d9f256fa8516c3419d50553fd}{build\+World}} ()
+\begin{DoxyCompactList}\small\item\em class for Rendering world and every objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_world_a3294ab79d9610b2659dcb57cb5638637}\label{class_world_a3294ab79d9610b2659dcb57cb5638637}} 
+void {\bfseries Update} (const Game\+Timer \&gt)
+\item 
+\mbox{\Hypertarget{class_world_a7414d8371a8a31100dadf7406454fd02}\label{class_world_a7414d8371a8a31100dadf7406454fd02}} 
+Camera $\ast$ {\bfseries Get\+Camera} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_world_a8a66d2af820e360ecbcb8ce0a56c6bb6}\label{class_world_a8a66d2af820e360ecbcb8ce0a56c6bb6}} 
+std\+::vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$ {\bfseries All\+Entities}
+\item 
+\mbox{\Hypertarget{class_world_a6dfcc38e198b6dac0050010cc4ab4dc8}\label{class_world_a6dfcc38e198b6dac0050010cc4ab4dc8}} 
+std\+::map$<$ std\+::string, std\+::unique\+\_\+ptr$<$ Mesh\+Geometry $>$ $>$ {\bfseries m\+Geometries}
+\item 
+\mbox{\Hypertarget{class_world_aa3af5b8b78b28110b3d60541b5744f9f}\label{class_world_aa3af5b8b78b28110b3d60541b5744f9f}} 
+std\+::map$<$ std\+::string, std\+::unique\+\_\+ptr$<$ Material $>$ $>$ {\bfseries m\+Materials}
+\item 
+\mbox{\Hypertarget{class_world_a2d7fd8917bbec5cc9beac87015b71b56}\label{class_world_a2d7fd8917bbec5cc9beac87015b71b56}} 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_render_item}{Render\+Item}} $>$ $>$ {\bfseries m\+All\+Ritems}
+\item 
+\mbox{\Hypertarget{class_world_ab035a339dace99b036b76f3e4a328b01}\label{class_world_ab035a339dace99b036b76f3e4a328b01}} 
+std\+::vector$<$ \mbox{\hyperlink{class_render_item}{Render\+Item}} $\ast$ $>$ {\bfseries m\+Ritem\+Layer} \mbox{[}(int) Render\+Layer\+::\+Count\mbox{]}
+\item 
+\mbox{\Hypertarget{class_world_a6835723f124067a0d3ec31c0d7250109}\label{class_world_a6835723f124067a0d3ec31c0d7250109}} 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ {\bfseries jet} = new \mbox{\hyperlink{class_player}{Player}}()
+\item 
+\mbox{\Hypertarget{class_world_ac2f967170b9aceddd9cfa7de640c80a1}\label{class_world_ac2f967170b9aceddd9cfa7de640c80a1}} 
+\mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ {\bfseries enemy} = new \mbox{\hyperlink{class_enemy}{Enemy}}()
+\item 
+\mbox{\Hypertarget{class_world_a0f2c18a4970eb7e9df0b5ba99a4b364b}\label{class_world_a0f2c18a4970eb7e9df0b5ba99a4b364b}} 
+\mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ {\bfseries enemy2} = new \mbox{\hyperlink{class_enemy}{Enemy}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_world_a3b28ac05d9e3deb27247f34098c042cc}\label{class_world_a3b28ac05d9e3deb27247f34098c042cc}} 
+Camera {\bfseries \+\_\+\+Camera}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class for \mbox{\hyperlink{class_world}{World}} itself. 
+
+\begin{DoxyAuthor}{Author}
+Yeongjin\+Lim
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2022-\/02-\/08
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+0.\+0.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_world_a3950826d9f256fa8516c3419d50553fd}\label{class_world_a3950826d9f256fa8516c3419d50553fd}} 
+\index{World@{World}!buildWorld@{buildWorld}}
+\index{buildWorld@{buildWorld}!World@{World}}
+\doxysubsubsection{\texorpdfstring{buildWorld()}{buildWorld()}}
+{\footnotesize\ttfamily void World\+::build\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+class for Rendering world and every objects. 
+
+It renders ground, enemies and \mbox{\hyperlink{class_player}{Player}}.
+
+\begin{DoxyAuthor}{Author}
+Yeongjin\+Lim
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2022-\/02-\/08
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+0.\+0.\+1 
+\end{DoxyVersion}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Desktop/\+GAME3015\+\_\+\+A1\+\_\+\+Yeongjin\+Lim/\+GAME3015\+\_\+\+A1\+\_\+\+Yeongjin\+Lim/\+GAME3015\+\_\+\+A1\+\_\+\+Yeongjin\+Lim/World.\+h\item 
+C\+:/\+Users/\+User/\+Desktop/\+GAME3015\+\_\+\+A1\+\_\+\+Yeongjin\+Lim/\+GAME3015\+\_\+\+A1\+\_\+\+Yeongjin\+Lim/\+GAME3015\+\_\+\+A1\+\_\+\+Yeongjin\+Lim/World.\+cpp\end{DoxyCompactItemize}

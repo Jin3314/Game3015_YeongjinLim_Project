@@ -1,0 +1,32 @@
+\hypertarget{_render_item_8h_source}{}\doxysection{Render\+Item.\+h}
+\label{_render_item_8h_source}\index{C:/Users/User/Desktop/GAME3015\_A1\_YeongjinLim/GAME3015\_A1\_YeongjinLim/GAME3015\_A1\_YeongjinLim/RenderItem.h@{C:/Users/User/Desktop/GAME3015\_A1\_YeongjinLim/GAME3015\_A1\_YeongjinLim/GAME3015\_A1\_YeongjinLim/RenderItem.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}Common/d3dApp.h"{}}}
+\DoxyCodeLine{3 \textcolor{keyword}{using namespace }DirectX;}
+\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_render_item}{RenderItem}}}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6 \textcolor{keyword}{public}:}
+\DoxyCodeLine{7     \mbox{\hyperlink{class_render_item}{RenderItem}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{8     XMFLOAT4X4 \mbox{\hyperlink{class_world}{World}} = MathHelper::Identity4x4();}
+\DoxyCodeLine{9     XMFLOAT4X4 TexTransform = MathHelper::Identity4x4();}
+\DoxyCodeLine{10     \textcolor{keywordtype}{int} NumFramesDirty = gNumFrameResources;}
+\DoxyCodeLine{11     UINT ObjCBIndex = -\/1;}
+\DoxyCodeLine{12     Material* Mat = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{13     MeshGeometry* Geo = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{14     D3D12\_PRIMITIVE\_TOPOLOGY PrimitiveType = D3D11\_PRIMITIVE\_TOPOLOGY\_TRIANGLELIST;}
+\DoxyCodeLine{15     UINT IndexCount = 0;}
+\DoxyCodeLine{16     UINT StartIndexLocation = 0;}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} BaseVertexLocation = 0;}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{enum class} RenderLayer : int}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     Opaque = 0,}
+\DoxyCodeLine{23     Transparent,}
+\DoxyCodeLine{24     AlphaTested,}
+\DoxyCodeLine{25     Count}
+\DoxyCodeLine{26 \};}
+
+\end{DoxyCode}
